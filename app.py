@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('index.html')
+	return render_template('index1.html')
 
 
 @app.route('/result', methods=['POST', 'GET'])
@@ -73,7 +73,7 @@ def get_delay():
         else:
             prediction = name + "  Check your details"
 
-    return render_template('result.html', prediction=prediction)
+    return render_template('result1.html', prediction=prediction)
 
 
 if __name__ == '__main__':
